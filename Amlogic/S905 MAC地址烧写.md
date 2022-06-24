@@ -1,13 +1,13 @@
 ## 以 S905 为例：
 
 1. 修改 SDK 代码：
-~~~git
+~~~txt
 iff --git i/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h w/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
 index 4ad4e61ad0..806a4a0834 100755
 --- i/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
 +++ w/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
 @@ -701,9 +701,8 @@
- #endif
+#endif
 
  /* Choose One of Ethernet Type */
 -#define CONFIG_ETHERNET_NONE
