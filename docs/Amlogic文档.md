@@ -2,7 +2,7 @@
 
 1. 修改 SDK 代码：
 ~~~txt
-iff --git i/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h w/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
+diff --git i/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h w/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
 index 4ad4e61ad0..806a4a0834 100755
 --- i/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
 +++ w/bootloader/uboot-repo/bl33/board/amlogic/configs/g12a_u202_v1.h
@@ -39,29 +39,29 @@ index 4ad4e61ad0..806a4a0834 100755
 
 
 6. 烧写镜像，勾选 MAC 密钥覆盖
-   ![](attachments/S905镜像烧写.png)
+  ![](attachments/S905镜像烧写.png)
 
 
 
 7. MAC 地址查看
-   ![](attachments/S905%20MAC地址查看.png)
+  ![](attachments/S905%20MAC地址查看.png)
 
 
 
-> mac_ether.ini 文件内容
->
-> ~~~ini
-> [Group1]
-> start = 02:E1:E2:35:40:70
-> end = 02:E1:E2:36:40:70
-> total = 65536
-> used = 1
-> current = 02:E1:E2:35:40:70
-> 
-> 
-> [fragment]
-> fragment = 
-> 
-> ~~~
->
-> MAC地址有格式要求，不符合格式的MAC地址，则会烧写无效
+mac_ether.ini 文件内容
+
+~~~txt
+[Group1]
+start = 02:E1:E2:35:40:70
+end = 02:E1:E2:36:40:70
+total = 65536
+used = 1
+current = 02:E1:E2:35:40:70
+
+
+[fragment]
+fragment = 
+
+~~~
+
+MAC地址有格式要求，不符合格式的MAC地址，则会烧写无效

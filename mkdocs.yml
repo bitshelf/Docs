@@ -1,10 +1,22 @@
-site_name: 开发板文档
-#theme: rtd-dropdown
-theme: readthedocs
+site_name: 荣品开发板文档
 
-nav；
-- Home: index.md
-- Linux:
-    - docs/Linux系统定制
-- Amlogic:
-    - docs/Amlogic
+nav:
+    - Home: index.md
+    - Linux:
+        - Linux: Linux文档.md
+    - Amlogic:
+        - Amlogic: Amlogic文档.md
+
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+#locale: zh_CN
+#search_box: true
+
+
+plugins:
+    - search
