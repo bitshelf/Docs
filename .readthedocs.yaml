@@ -18,3 +18,9 @@ mkdocs:
 python:
    install:
    - requirements: docs/requirements.txt
+
+search:
+  ranking:
+    # Deprecated content
+    api/v1.html: -1
+    config-file/v1.html: -5

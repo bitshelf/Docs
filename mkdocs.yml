@@ -11,12 +11,28 @@ nav:
 theme:
     name: readthedocs
     highlightjs: true
+    locale: zh
+    search_box: true
     hljs_languages:
         - yaml
         - rust
-#locale: zh_CN
-#search_box: true
+
+
 
 
 plugins:
-    - search
+    - search:
+        lang: 'zh_CN'
+        separator: '[\s\-\.]+'
+        #prebuild_index: true
+        indexing: 'full'
+        min_search_length: 2
+        
+
+markdown_extensions:
+    def_list: {}
+    toc:
+        permalink: true
+        permalink: 
+        separator: "_"
+    admonition: {}
